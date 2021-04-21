@@ -19,8 +19,8 @@ helping commands for node and react
 
 
 ### Run Tests
-1. Build docker image
-2. docker run image-name -it npm run test
-3.  
+1. Build docker image then run cmd ```docker run image-name -it npm run test```
+2. for docker-compose firstly up containers then run cmd ```docker exec -it image-name npm run test```
+3.     
 
 
