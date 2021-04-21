@@ -8,4 +8,5 @@ services:
        - "3000:3000"
     volumes:
        - /var/app/node_modules
-       - .:/var/app 
+       - .:/var/app
+    command: ["npm","run","test"] 
