@@ -21,5 +21,6 @@ helping commands for node and react
 ### Ways to Run Tests
 1. Build docker image then run cmd ```docker run image-name -it npm run test```
 2. for docker-compose firstly up containers then run cmd ```docker exec -it image-name npm run test```
-   **NOTE** To run tests automatically add command at last of service 
+
+**NOTE** To run tests automatically add command at last of service 
 
