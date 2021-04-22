@@ -29,6 +29,8 @@ helping commands for node and react
 2. To build image cmd ```docker build -f Dockerfile.prod . ```
 3. To run container cmd ``` docker run -p 80:80 --name node_app prod_frontend ```
 
+![image](https://user-images.githubusercontent.com/78042886/115704070-5448cd80-a384-11eb-92b8-9bd808229245.png)
+
 
 ## Travis Ci
 1. Create account and follow steps to attach github repo with travis-ci
