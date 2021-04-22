@@ -24,3 +24,7 @@ helping commands for node and react
 
 > **_NOTE:_** To run tests automatically add command ```npm run test``` at last of service 
 
+## Production Envoirnment
+1. Added Multi-Step Dockerfile.prod with nginx
+2. To build image cmd ```docker build -f Dockerfile.prod . ```
+3. To run container cmd ``` docker run -p 80:80 --name node_app prod_frontend ```
