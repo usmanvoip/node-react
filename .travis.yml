@@ -1,0 +1,23 @@
+sudo :required
+language: generic 
+services:
+  - docker
+
+berfore_install:
+  - docker build -t image_tag -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true image_tag npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-west-2"
+  app: "app_name" (Elastic beanstalk -> All Applications -> app_name -> env_name)
+  env: "env_name"
+  bucket_name: "elasticbeanstalk-region-id" (S3 bucket)
+  bucket_path: "app_name"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
